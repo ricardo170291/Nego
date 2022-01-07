@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "VisorPDF";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="~/Content/Bootstrap5/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Buscador de Propuestas</title>
+</head>
+<body class="bg-primary">
+    @*<img src="~/images/LOGO.gif" width="300" />*@
+
+    <div class="row justify-content-center">
+        <div class="col-6 col-sm-5 col-md-4 col-lg-4 col-xl-3 col-xxl-2 mt-5 ">
+            <img src="~/images/logo_1.gif" width="210" />
+            <form action="#" method="post" class="form-control bg-primary">
+                <label class="label form-label text-white">Nro. De Documento</label><br />
+                <input type="text" name="txtdocumento" value="" id="v_documento" /><br />
+                <label class="label form-label text-white">Nro. De Propuesta</label><br />
+                <input type="text" name="txtpropuesta" value="" id="v_propuesta" /><br />
+                <button type="submit" class="btn btn-success mt-4 w-100" id="btnAceptar">Obtener</button>
+                @*<button type="button" class="btn btn-secondary mt-3 ms-xl-2 ms-xxl-2">Cancelar</button>*@
+                <h4>
+                    <label class="flabel form-label text-warning mt-3">@ViewBag.mensaje</label>
+                </h4>
+            </form>
+        </div>
+    </div>
+    <script src="~/Content/Bootstrap5/js/bootstrap.esm.min.js"></script>
+</body>
+</html>
+
+
+
